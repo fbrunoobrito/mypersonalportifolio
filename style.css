@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+  font-family: "Poppins", sans-serif;
+  background-color: #ede8fc;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Header */
+
+.topo {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem 0;
+  align-items: center;
+}
+
+.logo {
+  align-self: center;
+  min-width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  gap: 1rem;
+}
+
+/* Section Apresentação */
+
+.apresentacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.apr-infos {
+  display: grid;
+  grid-template-rows: max-content;
+  align-content: center;
+  gap: 0.8rem;
+  margin-top: 09rem;
+}
+
+.apr-infos h1 {
+  font-weight: 700;
+  color: #141715;
+  font-size: 2.5rem;
+}
+
+.apr-infos .apr-oi-especial {
+  margin-bottom: -1.8rem;
+  font-size: 3.5rem;
+}
+
+.apr-infos h1 span {
+  font-weight: 700;
+  color: #7350e6;
+}
+
+.apr-infos h2 {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #6a657a;
+  max-width: 40ch;
+  margin-bottom: 2rem;
+}
+
+.ctas {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.apr-cta-one {
+  background-color: #7350e6;
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  border: 4px solid #0e0c14;
+  box-shadow: 1px 3px #0e0c14;
+  color: white;
+  text-decoration: none;
+}
+
+.apr-cta-two {
+  background-color: #ede8fc;
+  padding: 0.5rem 3rem;
+  border-radius: 2rem;
+  border: 4px solid #0e0c14;
+  box-shadow: 1px 3px #0e0c14;
+  color: #0e0c14;
+  text-decoration: none;
+}
+
+.apr-experiencias {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #6a657a;
+  max-width: 40ch;
+  padding-top: 5rem;
+}
+
+.apr-experiencias span::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  margin: 0 1rem;
+  top: -3px;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #f9ef70;
+}
+
+.circulo {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  top: 80px;
+  right: -350px;
+  background-color: #f9ef70;
+  z-index: -1;
+}
+
+.ilustracao-foto {
+  position: relative;
+  max-width: 500px;
+  right: 50px;
+}
+
+.ilustracao-foto span:not(.foto, .circulo) {
+  position: absolute;
+}
+
+.deco-1 {
+  top: 350px;
+  left: 110px;
+}
+
+.deco-2 {
+  top: 200px;
+  right: -300px;
+}
+
+.deco-3 {
+  top: 450px;
+  right: -220px;
+}
+
+.foto {
+  position: relative;
+  top: 60px;
+  right: -230px;
+}
+
+/* Section Sobre */
+
+.sobre {
+  background-color: #0e0c14;
+  margin: 3.2rem 0 0 0;
+  width: 100vw;
+  padding-bottom: 5rem;
+  display: block;
+}
+
+.sobre-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding-top: 5rem;
+}
+
+.illustracao {
+  max-width: 380px;
+}
+
+.sobre-desc {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+
+.sobre-title {
+  color: #f4f8f2;
+  display: flex;
+  font-size: 2rem;
+  justify-content: flex-end;
+}
+
+.sobre-title h1 {
+  font-size: 2.5rem;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.sobre-title h1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3.2rem;
+  width: 100%;
+  height: 5px;
+  background-color: #7350e6;
+  border-radius: 2rem;
+}
+
+.sobre-title span {
+  max-width: 3rem;
+  margin-left: 0.6rem;
+}
+
+.sobre-parag {
+  color: #c3bfd9;
+  font-size: 1.6rem;
+  text-align: right;
+  max-width: 800px;
+}
+
+.sobre-stats {
+  color: #7350e6;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: right;
+  align-items: flex-end;
+}
+
+.sobre-stats li {
+  padding-left: 8rem;
+}
+
+.sobre-stats h2 {
+  font-size: 2.5rem;
+}
+
+.sobre-stats span {
+  font-size: 1rem;
+  color: #6a657a;
+}
+
+/* Section Formação */
+
+.level {
+  background-color: #0e0c14;
+  width: 100vw;
+  padding: 5rem;
+  display: block;
+}
+
+.level-title {
+  color: #f4f8f2;
+  display: flex;
+  font-size: 2rem;
+  justify-content: flex-end;
+}
+
+.level-title h1 {
+  font-size: 2.5rem;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.05rem;
+}
+
+.level-title h1::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 3.2rem;
+  width: 100%;
+  height: 5px;
+  background-color: #7350e6;
+  border-radius: 2rem;
+}
+
+.level-title span {
+  max-width: 5rem;
+  margin-left: 0.6rem;
+}
+
+.level-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  padding-top: 3rem;
+}
+
+.level-cards ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  flex: 0 0 auto;
+  border: 4px solid #7350e6;
+  max-width: 22rem;
+  padding: 1rem 1.8rem;
+  border-radius: 1rem;
+}
+
+.card h2 {
+  color: #ede8fc;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: -0.5rem;
+}
+
+.card h2 + span {
+  color: #6a657a;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.card p {
+  color: #c3bfd9;
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin: 0.8rem 0;
+}
+
+.card h3 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #7350e6;
+  margin-bottom: -0.5rem;
+}
+
+.card h3 + span {
+  color: #6a657a;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
+/* Section Projetos */
