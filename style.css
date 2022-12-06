@@ -85,7 +85,7 @@ img {
 
 .ctas {
   display: flex;
-  gap: 2rem;
+  gap: 1rem;
   align-items: center;
 }
 
@@ -292,6 +292,10 @@ img {
 .level-title span {
   max-width: 5rem;
   margin-left: 0.6rem;
+}
+
+.level-cards::-webkit-scrollbar {
+  display: none;
 }
 
 .level-cards {
