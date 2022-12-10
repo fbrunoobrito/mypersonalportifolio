@@ -311,7 +311,8 @@ img {
 }
 
 .level-cards {
-  width: 100vw;
+  min-width: 100vw;
+  min-width: -webkit-fill-available;
   display: flex;
   flex-wrap: nowrap;
   overflow-x: auto;
