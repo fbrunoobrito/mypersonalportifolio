@@ -492,3 +492,30 @@ img {
   color: white;
   text-decoration: none;
 }
+
+/* Section Footer */
+
+.contato {
+  background-color: #a78bff;
+  padding-top: 4rem;
+}
+
+.contato-logo {
+  display: inline-block;
+  width: 4rem;
+}
+
+.contato-wrapper h1 {
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+.formulario {
+  display: flex;
+  max-width: 60%;
+}
+
+.formulario input[type="text"] {
+  width: 150px;
+}
