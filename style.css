@@ -516,6 +516,109 @@ img {
   max-width: 60%;
 }
 
-.formulario input[type="text"] {
-  width: 150px;
+fieldset {
+  padding-block: 3rem;
+  border: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+fieldset * {
+  background: transparent;
+  border: 0;
+  margin: 0;
+}
+
+#fullname,
+#phone,
+#email {
+  padding-top: 0.8rem;
+  text-align: left;
+  width: 100%;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+#fullname:focus,
+#phone:focus,
+#email:focus {
+  outline: none;
+  background-color: transparent;
+}
+
+.name-wrapper,
+.phone-wrapper {
+  padding-right: 2rem;
+}
+
+.name-wrapper {
+  flex-grow: 2;
+}
+
+.name-wrapper span,
+.phone-wrapper span,
+.email-wrapper span {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background: #f9ef70;
+  border-radius: 99px;
+  transform: translateY(-10px);
+}
+
+label[for="fullname"],
+label[for="phone"],
+label[for="email"] {
+  display: block;
+  width: 100%;
+  font-size: 0.8rem;
+  color: #6a657a;
+}
+
+.email-wrapper {
+  min-width: 25rem;
+  flex-grow: 2;
+}
+
+button[type="submit"] {
+  margin: auto 3rem;
+  padding: 0.7rem 1.21rem;
+  background-color: #f9ef70;
+  border: 4px solid #0e0c14;
+  box-shadow: 1px 3px #0e0c14;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0e0c14;
+}
+
+.nav-footer {
+  background-color: #a78bff;
+  padding: 5rem 0 4rem 0;
+}
+
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo-footer img {
+  min-width: fit-content;
+}
+
+.menu-footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 1rem;
+}
+
+.menu-footer a {
+  text-decoration: none;
+  padding: 0.8rem 1.5rem;
+  color: #0e0c14;
+}
+
+.menu-footer li:first-child a{
+  padding-left: 0;
 }
